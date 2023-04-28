@@ -1,12 +1,6 @@
 # README
 This bash script is designed to automate the configuration and execution of port scans on a specified domain or IP address. The code is written to be run on Linux systems and requires the Nmap package to function correctly.
 
-# Usage
-To use the script, you need to specify the domain or IP address to scan using the -d and -t options, respectively. For example:
-```./mynmap.sh -t 192.168.1.1 -d example.com```
-
-You can use the ```-nc``` or ```--no-colors``` option to disable console coloring if necessary.
-
 # Features
 The script performs the following tasks:
 
@@ -18,3 +12,15 @@ The script performs the following tasks:
 
 # Requirements
 This script requires the Nmap package to function correctly. Make sure to have it installed before using the script.
+
+# Usage
+Mandatory arguments:
+  ```-t, --target <TARGET_IP>     The IP address of the target to scan.```
+  ```-d, --domain <DOMAIN_NAME>   The domain name of the target to scan.```
+
+Optional arguments:
+  ```-nc, --no-colors             Disable console coloring.```
+
+Examples:
+  ```./port-scan.sh -t 192.168.1.1 -d example.com```
+  ```./port-scan.sh -t 10.0.0.2 -d mydomain.com --no-colors```
