@@ -15,12 +15,17 @@ This script requires the Nmap package to function correctly. Make sure to have i
 
 # Usage
 Mandatory arguments:
+
   ```-t, --target <TARGET_IP>```     The IP address of the target to scan.
-  ```-d, --domain <DOMAIN_NAME>```   The domain name of the target to scan.```
+  
+  ```-d, --domain <DOMAIN_NAME>```   The domain name of the target to scan.
 
 Optional arguments:
-  ```-nc, --no-colors             Disable console coloring.```
+
+  ```-nc, --no-colors```             Disable console coloring.
 
 Examples:
+
   ```./port-scan.sh -t 192.168.1.1 -d example.com```
+  
   ```./port-scan.sh -t 10.0.0.2 -d mydomain.com --no-colors```
